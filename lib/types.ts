@@ -1,0 +1,2 @@
+export type RawHit={title:string;url:string;source:string;publishedAt?:string;snippet:string;channel:"authority"|"news"|"douyin"|"xiaohongshu"};
+export type Trend={id:string;title:string;sourceType:string;sourceName:string;sourceUrl:string;publishedAt:string;collectedAt:string;confidence:"高"|"中"|"线索"|"AI参考";event:string;summary:string;insuranceBridge:string;topics:string[];contentIdeas:string[];goldenLines:string[];visual:string;voiceover:string;tags:string[]};
