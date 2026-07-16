@@ -158,8 +158,8 @@ export async function collectHits(): Promise<{hits: RawHit[]; mode: string}> {
     } catch {}
   }
 
-  // 2. 浏览器抓取（360 搜索 + site 搜索）
-  if (!hits.length) {
+  // 2. 浏览器抓取（仅在非 Vercel 环境执行）
+  if (!hits.length && !process.env.VERCEL) {
     try {
       hits = await scrape360(browserScrapeJobs, {
         headless: process.env.BROWSER_HEADLESS !== "false",

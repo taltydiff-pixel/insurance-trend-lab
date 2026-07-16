@@ -1,0 +1,7 @@
+{
+  "functions": {
+    "app/api/trends/route.ts": {
+      "maxDuration": 60
+    }
+  }
+}
